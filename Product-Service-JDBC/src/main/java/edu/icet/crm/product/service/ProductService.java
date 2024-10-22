@@ -3,5 +3,7 @@ package edu.icet.crm.product.service;
 import edu.icet.crm.product.model.Product;
 
 public interface ProductService {
-    void saveProduct(Product product);
+    Boolean addProduct(Product product);
+    Product searchById(String id);
+    Product searchByName(String name);
 }
